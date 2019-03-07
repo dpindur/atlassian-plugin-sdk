@@ -4,7 +4,7 @@ A simple Docker image for development of Atlassian Plugins.
 
 ## Running 
 ```bash
-host$ docker run -v /path/to/plugin/src:/usr/src/app dpindur/atlassian-plugin-sdk:latest
+host$ docker run -it -p 2990:2990 -v /path/to/plugin/src:/usr/src/app dpindur/atlassian-plugin-sdk:latest bash
 
 root@9491d75d4968:/usr/src/app# atlas-version
 
